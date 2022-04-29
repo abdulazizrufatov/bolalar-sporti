@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Sport bolalar</title>
+</head>
+<body>
+  <header class="site-header site-header--open">
+    <div class="site-header__line"></div>
+    <div class="container site-header__container">
+      <a class="logo logo--header" href="index.html">
+        <img src="./images/sport-bolalar.svg" alt="" width="224" height="56">
+      </a>
+      <nav class="site-header__nav">
+        <ul class="site-header__nav-list">
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">
+              <img src="./images/home.svg" alt="home" width="24" height="24">
+            </a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">O‘yinlar</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">Infografika</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">Ota-onalar uchun</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">To‘garaklar</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">Videoblog</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">Reyting</a>
+          </li>
+        </ul>
+        <div class="site-header__nav-settings">
+          <div class="site-header__nav-lang">
+            <img src="./images/icons8-language 1.svg" alt="language icon" width="20" height="20">
+            <select class="site-header__nav-select" name="lang" id="lang">
+              <option value="UZB">UZB</option>
+              <option value="Rus">Rus</option>
+              <option value="Eng">Eng</option>
+            </select>
+          </div>
+          <a class="site-button" href="#">
+            <img class="site-button__img" src="./images/Vector.png" alt="vector" width="20" height="20">
+            Kabinet
+          </a>
+        </div>
+      </nav>
+      <div class="site-header__mobile-bag"></div>
+      <button class="site-header__hamburger"></button>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container hero">
+        <div class="hero__box">
+          <h1 class="hero__heading">Sport Bolalar Nigohida
+            portalida yangi o‘yinimizni qarshi oling!</h1>
+            <div class="hero__box-bottom">
+              <a class="hero__link" href="#">O‘yinga o‘tish</a>
+              <a class="site-button" href="#">Batafsil</a>
+            </div>
+          </div>
+          <picture>
+            <source media="(max-width: 1030px)" srcset="./images/sport-lugati.svg">
+            <source media="(max-width: 1030px)" srcset="./images/tablet-sport-lugati.svg">
+
+            <img class="hero__img" src="./images/sport-lugati.svg" alt="Bolalar lugati" width="722" height="714">
+          </picture>
+        </div>
+      </section>
+      <section>
+        <div class="container introduction-container">
+          <div class="introduction">
+            <h2 class="introduction__heading">Ota-onalar sahifasi</h2>
+            <p class="introduction__desc">Ushbu sahifa ota-onalarni bolalar sporti dunyosi bilan tanishtiradi</p>
+            <button class="introduction__button">Sahifaga o‘tish</button>
+          </div>
+        </div>
+      </section>
+      <section class="video-blog">
+        <div class="container video-blog__container">
+          <a class="video-blog__button" href="">
+            <div class="video-blog__button-box">
+              <p class="video-blog__button-desc">10/11/2017</p>
+              <p class="video-blog__button-desc">Futbol</p>
+            </div>
+            <h3 class="video-blog__title">O‘smirlar o‘rtasida futbol chempionati o‘tkazildi</h3>
+          </a>
+          <a class="video-blog__button" href="">
+            <div class="video-blog__button-box">
+              <p class="video-blog__button-desc">10/11/2017</p>
+              <p class="video-blog__button-desc">Kuch sinashish</p>
+            </div>
+            <h3 class="video-blog__title">Kuch sinashish bo‘yicha qaysi jamoa g‘olib bo‘ldi...</h3>
+          </a>
+
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+  </html>

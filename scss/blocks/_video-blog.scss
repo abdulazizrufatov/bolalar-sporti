@@ -1,0 +1,46 @@
+.video-blog{
+    &__container{
+padding-top: 64px;
+    }
+    &__button{
+        text-decoration: none;
+        display: inline-block;
+        padding: 20px;
+        background-image: url(../../images/foodbol-video.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 304px;
+        height: 216px;
+    }
+    &__button + &__button {
+margin-left: 32px;
+    }
+    &__button-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    &__button-desc{
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+
+    }
+    // &__button-desc + &__button-desc{
+    //     margin-left: 155px;
+    // }
+    &__title{
+        margin: 0;
+        padding: 0;
+        margin-top: 114px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.12px;
+        color: #FFFFFF;
+    }
+}

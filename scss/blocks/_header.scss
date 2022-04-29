@@ -1,0 +1,186 @@
+.site-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(4px);
+    &__line{
+        background: #7569DE;
+        height: 4px;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 20px;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+    &__nav-list{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    &__nav-item + &__nav-item {
+        margin-left: 32px;
+    }
+    &__nav-link{
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        color: #5D748A;
+    }
+    &__nav-settings{
+        display: flex;
+        align-items: center;
+        margin-left: 64px;
+    }
+    &__nav-lang{
+        display: flex;
+        align-items: center;
+        margin-right: 24px;
+    }
+    &__nav-select{
+        border: none;
+        margin-left: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D748A;
+        appearance: none;
+
+    }
+    &__mobile-bg{
+        display: none;
+        position: absolute;
+        top: 610px;
+        left: 0;
+        width: 100vh;
+        height: 100vh;
+        background: rgba(93, 116, 138, 0.7);
+    }
+    &__hamburger{
+        display: none;
+        background-image: url(../../images/menu.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 25px;
+        height: 18px;
+        border: none;
+        background-color: transparent;
+    }
+
+}
+@media only screen and (max-width: 1340px){
+    .site-header {
+      &__nav-item + &__nav-item {
+        margin-left: 18px;
+      }
+
+      &__nav-settings {
+        margin-left: 32px;
+      }
+
+      &__nav-lang{
+        margin-right: 12px;
+      }
+
+      &__nav-lang-select {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1200px){
+    .site-header {
+      &__nav-list {
+        display: none;
+      }
+
+      &__hamburger {
+        display: inline-block;
+      }
+
+      &__nav-settings {
+        margin-left: 24px;
+      }
+
+      &__nav-lang{
+        margin-right: 24px;
+      }
+    }
+
+    .site-header--open .site-header__nav-list{
+      display: flex;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 30px 160px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+      backdrop-filter: blur(4px);
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 1020px){
+    .site-header--open .site-header__nav-list{
+      padding: 30px 80px;
+    }
+  }
+
+  @media only screen and (max-width: 550px){
+    .site-header {
+      &__nav-settings{
+        display: none;
+      }
+    }
+
+    .site-header--open .site-header__nav-settings{
+      display: flex;
+    }
+
+    .site-header--open .site-header__nav-list{
+      flex-direction: column;
+      position: static;
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+      backdrop-filter: none;
+      margin-bottom: 134px;
+    }
+
+    .site-header--open .site-header__nav-item + .site-header__nav-item{
+      margin-left: 0;
+      margin-top: 13px;
+    }
+
+    .site-header--open .site-header__nav{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 54px 80px 33px;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(4px);
+    }
+
+    .site-header--open .site-header__mobile-bg{
+      display: block;
+      z-index: -90;
+    }
+  }

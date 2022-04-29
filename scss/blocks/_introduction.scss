@@ -1,0 +1,48 @@
+.introduction{
+    padding-top: 40px;
+    padding-bottom: 43px;
+    padding-left: 111px;
+    background-color: #687faa;
+    background-image: url(../../images/ota-onalar-sahifasi.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+
+    &__heading{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 162.5%;
+        letter-spacing: 0.12px;
+        color: #FFFFFF;
+
+    }
+    &__desc{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 36px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 162.5%;
+        letter-spacing: 0.12px;
+        color: #FFFFFF;
+
+    }
+    &__button{
+        padding: 13px 24px;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        color: #FFFFFF;
+        border: none;
+        background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
+        box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+        border-radius: 50px;
+
+    }
+    &__button:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
