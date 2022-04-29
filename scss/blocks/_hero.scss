@@ -1,7 +1,8 @@
 .hero{
     background-image: url(../../images/hero-bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    height: 1110px;
     padding-top: 290px;
     padding-bottom: 453px;
     padding-left: 175px;
@@ -38,10 +39,12 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 }
-@media only screen and (max-width:1030px) {
+@media only screen and (max-width:1200px) {
     .hero{
-        padding: 284px 20px 421px 108px;
-        background-size: contain;
+        padding: 147px 20px 214px 108px;
+        background-size: cover;
+        width: 1024px;
+        height: 1100px;
         &__box{
             width: 364px;
         }
